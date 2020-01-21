@@ -14,8 +14,6 @@ This list of items is then cross-referenced against a dataset of grocery items t
 The ingredients are then returned to the user as an editable list requiring quantity specification and item confirmation.
 An HTTP request is made to Edamam's Recipe API, with the food items list from the previous step, passed in as a parameter. The API references a large database of recipes with common ingredients from a large variety of sources.
 The response data is then parsed and structured to present to the user. The retained information includes the main image, link to the recipe, cook time, yield and nutritional information.
-How we built it
-We built the app with React.js, used Google's Cloud Vision API to identify food items and Edamam's Recipe API to return meal suggestions.
 
 ## Next Steps
 We had faced challenges with the Google Cloud Vision API as the initial setup was new for many group members. The initial stages of image recognition also returned vague and often unrelated items (fruit, container, fridge). To combat this, we plan to add an additional recognition layer that trains the model to recognize consumer products and specific produce. This will allow us to narrow the image recognition for instances like "fruit" to "apple", and "bottle" to "barbeque sauce".
